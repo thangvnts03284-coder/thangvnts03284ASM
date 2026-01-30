@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Trường THCS Đặng Trần Côn</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            background-color: #fffffc;
+            line-height: 1.6;
+        }
+
+        /* HEADER */
+        header {
+            background-image: url("https://poipic4.coccoc.com/1000x750/poi/previews/20180212/21642-91d2f06caaa3369ed8d3584c0cb10018.jpg");
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 40px 20px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+
+            position: relative;
+        }
+
+        header::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        header * {
+            position: relative;
+            z-index: 1;
+        }
+
+        header img {
+            width: 80px;
+        }
+
+        /* MENU */
+        nav {
+            background-color: #eab000;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li a {
+            display: block;
+            padding: 12px 18px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            background-color: #c99700;
+        }
+
+        /* GRID TỔNG */
+        .main-grid {
+            max-width: 1200px;
+            margin: 30px auto;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            padding: 0 15px;
+        }
+
+        section {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        h2 {
+            color: #eab000;
+            border-bottom: 2px solid #eab000;
+            padding-bottom: 5px;
+        }
+
+        /* GRID TRONG SECTION */
+        .section-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.2fr;
+            gap: 15px;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+
+        /* FOOTER */
+        footer {
+            background-color: #eab000;
+            color: white;
+            text-align: center;
+            padding: 12px;
+            margin-top: 30px;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            .main-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .section-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <img src="https://filethcs.hcm.shieldixcloud.com/uploadimages/config/2025/thcsdangtrancon/logo-moi-thay-doi-png_21820251356.png" alt="Logo">
+        <div>
+            <h1>Trường THCS Đặng Trần Côn</h1>
+            <p>Nơi ươm mầm tri thức – Chắp cánh tương lai</p>
+        </div>
+    </header>
+
+    <!-- MENU -->
+    <nav>
+        <ul>
+            <li><a href="#gioithieu">Giới thiệu</a></li>
+            <li><a href="#cosovatchat">Cơ sở vật chất</a></li>
+            <li><a href="#giaovien">Giáo viên</a></li>
+            <li><a href="#hoatdong">Hoạt động</a></li>
+        </ul>
+    </nav>
+
+    <!-- NỘI DUNG GRID -->
+    <div class="main-grid">
+
+        <!-- GIỚI THIỆU -->
+        <section id="gioithieu">
+            <h2>Giới thiệu chung</h2>
+            <div class="section-grid">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyQSmZcw7AkFVOf0HUYfWtcO02_hq57ImA9A&s" alt="">
+                <p>
+                    Trường THCS Đặng Trần Côn là ngôi trường có truyền thống dạy tốt – học tốt,
+                    chú trọng giáo dục toàn diện cho học sinh.
+                </p>
+            </div>
+        </section>
+
+        <!-- CƠ SỞ VẬT CHẤT -->
+        <section id="cosovatchat">
+            <h2>Cơ sở vật chất</h2>
+            <div class="section-grid">
+                <img src="https://phongkhachdep.org/wp-content/uploads/2020/06/A%CC%81nh-sa%CC%81ng-pho%CC%80ng-ho%CC%A3c.jpeg" alt="">
+                <ul>
+                    <li>Phòng học khang trang</li>
+                    <li>Phòng máy tính hiện đại</li>
+                    <li>Thư viện phong phú</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- GIÁO VIÊN -->
+        <section id="giaovien">
+            <h2>Đội ngũ giáo viên</h2>
+            <div class="section-grid">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdbfLJNQa2xXnj1Tde2erTPwOlyYafDI9l5g&s" alt="">
+                <p>
+                    Đội ngũ giáo viên có trình độ chuyên môn cao,
+                    tận tâm và giàu kinh nghiệm trong giảng dạy.
+                </p>
+            </div>
+        </section>
+        
+        <section>
+    <h2>Video giới thiệu</h2>
+
+    <iframe 
+    width="560" 
+    height="315" 
+    src="https://www.youtube.com/embed/QXOjuaK4TS8?si=Kbn7-kTDEmTwEKTn" 
+    title="YouTube video player" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+    referrerpolicy="strict-origin-when-cross-origin" 
+    allowfullscreen></iframe>
+</section>
+
+
+        <!-- HOẠT ĐỘNG -->
+        <section id="hoatdong">
+            <h2>Hoạt động nổi bật</h2>
+            <div class="section-grid">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUVyht24ufnNvQIZjB9yVf_-Y9vcVLuyUKHQ&s" alt="">
+                <ul>
+                    <li>Hoạt động Đội – Đoàn</li>
+                    <li>Văn nghệ – Thể thao</li>
+                    <li>Ngoại khóa kỹ năng sống</li>
+                </ul>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        © 2026 Trường THCS Đặng Trần Côn
+    </footer>
+
+    <section class="map-section">
+        <h2> Bản đồ khu tự trị  </h2>
+
+        <div class="map-cotainer">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d245.08681158441365!2d103.5115207002966!3d10.626858698082614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3107e1006006c5bd%3A0x5a31444530065cb4!2zS2h1IHThu7EgdHLhu4s!5e0!3m2!1svi!2s!4v1769410360261!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                >
+            </iframe>
+
+        </div>
+
+    </section>
+</body>
+</html>
