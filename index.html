@@ -125,6 +125,45 @@
                 grid-template-columns: 1fr;
             }
         }
+
+        /* MAP + ĐỊA CHỈ */
+.map-section {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 15px;
+}
+
+.map-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 350px;
+    border-radius: 8px;
+}
+
+.address-box {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.address-box h3 {
+    color: #eab000;
+    margin-top: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .map-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
     </style>
 </head>
 
@@ -225,16 +264,40 @@
     </footer>
 
     <section class="map-section">
-        <h2> Bản đồ khu tự trị  </h2>
+    <h2>Bản đồ & Địa chỉ</h2>
 
-        <div class="map-cotainer">
+    <div class="map-grid">
+
+        <!-- GOOGLE MAP -->
+        <div class="map-container">
             <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d245.08681158441365!2d103.5115207002966!3d10.626858698082614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3107e1006006c5bd%3A0x5a31444530065cb4!2zS2h1IHThu7EgdHLhu4s!5e0!3m2!1svi!2s!4v1769410360261!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-                >
+                
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.154003786674!2d106.6229984108858!3d10.799514489306267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752957ea9fc9b7%3A0xba99b72cbc0683f6!2zVHLGsOG7nW5nIFRIQ1MgxJDhurduZyBUcuG6p24gQ8O0bg!5e0!3m2!1svi!2s!4v1769758201511!5m2!1svi!2s" 
+            
+                referrerpolicy="no-referrer-when-downgrade"
+                allowfullscreen>
             </iframe>
-
         </div>
 
-    </section>
+        <!-- ĐỊA CHỈ -->
+        <div class="address-box">
+            <h3>Thông tin liên hệ</h3>
+            <p><strong>Địa chỉ:</strong> 35 Đ. Hà Thị Đát, Tân Sơn Nhì, Tân Phú, Thành phố Hồ Chí Minh, Việt Nam</p>
+            <p><strong>Điện thoại:</strong> 02838496032</p>
+           
+            <p><strong>Giờ làm việc:</strong><br>
+                Thứ 2 – Thứ 6: 7:00 – 17:00
+            </p>
+        </div>
+
+    </div>
+</section>
+        
+    </div>
+</section>
+
+    </div>
+</section>
+
 </body>
 </html>
