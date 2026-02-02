@@ -6,127 +6,176 @@
     <title>Trường THCS Đặng Trần Côn</title>
 
     <style>
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            margin: 0;
-            background-color: #fffffc;
-            line-height: 1.6;
-        }
 
-        /* HEADER */
-        header {
-            background-image: url("https://poipic4.coccoc.com/1000x750/poi/previews/20180212/21642-91d2f06caaa3369ed8d3584c0cb10018.jpg");
-            background-size: cover;
-            background-position: center;
-            color: white;
-            padding: 40px 20px;
+   /* MENU */
+.main-menu {
+    background-color: #eab000;
+}
 
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 20px;
+.menu-container {
+    max-width: 120px;
+    margin: 0 auto;
+    padding: 0 20px;
 
-            position: relative;
-        }
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+}
 
-        header::before {
-            content: "";
-            position: absolute;
-            inset: 0;
-            background-color: rgba(0, 0, 0, 0.5);
-        }
+/* LOGO */
+.menu-logo img {
+    height: 45px;
+}
 
-        header * {
-            position: relative;
-            z-index: 1;
-        }
+/* MENU LIST */
+.menu-list {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
 
-        header img {
-            width: 80px;
-        }
+.menu-list li {
+    margin-left: 30px;
+}
 
-        /* MENU */
-        nav {
-            background-color: #eab000;
-        }
+.menu-list li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
 
-        nav ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-        }
+.menu-list li a:hover {
+    background-color: #ffb700;
+}/* ===== RESET & BODY ===== */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: #fffffc;
+    line-height: 1.6;
+}
 
-        nav ul li a {
-            display: block;
-            padding: 12px 18px;
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-        }
+img {
+    max-width: 100%;
+    border-radius: 8px;
+}
 
-        nav ul li a:hover {
-            background-color: #c99700;
-        }
+/* ===== HEADER ===== */
+header {
+    background-image: url("https://poipic4.coccoc.com/1000x750/poi/previews/20180212/21642-91d2f06caaa3369ed8d3584c0cb10018.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 40px 20px;
 
-        /* GRID TỔNG */
-        .main-grid {
-            max-width: 1200px;
-            margin: 30px auto;
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 20px;
-            padding: 0 15px;
-        }
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
 
-        section {
-            background-color: white;
-            padding: 20px;
-            border-radius: 8px;
-        }
+    position: relative;
+}
 
-        h2 {
-            color: #eab000;
-            border-bottom: 2px solid #eab000;
-            padding-bottom: 5px;
-        }
+header::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
 
-        /* GRID TRONG SECTION */
-        .section-grid {
-            display: grid;
-            grid-template-columns: 1fr 1.2fr;
-            gap: 15px;
-            align-items: center;
-            margin-top: 10px;
-        }
+header * {
+    position: relative;
+    z-index: 1;
+}
 
-        img {
-            max-width: 100%;
-            border-radius: 8px;
-        }
+header img {
+    width: 80px;
+}
 
-        /* FOOTER */
-        footer {
-            background-color: #eab000;
-            color: white;
-            text-align: center;
-            padding: 12px;
-            margin-top: 30px;
-        }
+/* ===== MENU ===== */
+.main-menu {
+    background-color: #eab000;
+}
 
-        /* RESPONSIVE */
-        @media (max-width: 768px) {
-            .main-grid {
-                grid-template-columns: 1fr;
-            }
+.menu-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 
-            .section-grid {
-                grid-template-columns: 1fr;
-            }
-        }
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
-        /* MAP + ĐỊA CHỈ */
+/* LOGO */
+.menu-logo img {
+    height: 45px;
+}
+
+/* MENU LIST */
+.menu-list {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-list li {
+    margin-left: 30px;
+}
+
+.menu-list li a {
+    display: flex;
+    align-items: center;
+    height: 100%;
+
+    padding: 0 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.menu-list li a:hover {
+    background-color: #ffb700;
+}
+
+/* ===== GRID TỔNG ===== */
+.main-grid {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 15px;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+section {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+h2 {
+    color: #eab000;
+    border-bottom: 2px solid #eab000;
+    padding-bottom: 5px;
+}
+
+/* GRID TRONG SECTION */
+.section-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 15px;
+    align-items: center;
+    margin-top: 10px;
+}
+
+/* ===== MAP ===== */
 .map-section {
     max-width: 1200px;
     margin: 30px auto;
@@ -156,15 +205,43 @@
     margin-top: 0;
 }
 
-/* Responsive */
+/* ===== FOOTER ===== */
+footer {
+    background-color: #eab000;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    margin-top: 30px;
+}
+
+/* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
+    .menu-container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .menu-list {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .main-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section-grid {
+        grid-template-columns: 1fr;
+    }
+
     .map-grid {
         grid-template-columns: 1fr;
     }
 }
 
-
     </style>
+    
+
 </head>
 
 <body>
@@ -178,15 +255,32 @@
         </div>
     </header>
 
-    <!-- MENU -->
-    <nav>
-        <ul>
-            <li><a href="#gioithieu">Giới thiệu</a></li>
-            <li><a href="#cosovatchat">Cơ sở vật chất</a></li>
-            <li><a href="#giaovien">Giáo viên</a></li>
-            <li><a href="#hoatdong">Hoạt động</a></li>
+   <!-- MENU -->
+
+<!-- MENU -->
+<nav class="main-menu">
+    <div class="menu-container">
+
+        <!-- LOGO -->
+    <div class="menu-logo">
+        <img src="https://fps.edu.vn/wp-content/uploads/2025/11/FPS-LOGO-1400x320.png" alt="Logo trường">
+    </div>
+
+
+        <ul class="menu-list">
+            <li><a href="2A-FINALASMTEST.html">Trang chủ</a></li>
+            <li><a href="2B-gioithieuTEST.html">Giới thiệu</a></li>
+            <li><a href="2C-cosovatchat.html">Cơ sở vật chất</a></li>
+            <li><a href="2D-giaovien.html">Giáo viên</a></li>
+            <li><a href="2E-hoatdong.html">Hoạt động</a></li>
         </ul>
-    </nav>
+    </div>
+</nav>
+
+
+
+   
+
 
     <!-- NỘI DUNG GRID -->
     <div class="main-grid">
@@ -301,3 +395,4 @@
 
 </body>
 </html>
+
